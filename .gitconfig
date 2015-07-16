@@ -1,0 +1,9 @@
+[user]
+	name = Kaixi Hou
+	email = kaixihou@vt.edu
+[push]
+	default = simple
+[alias]
+    st = status
+    ci = commit -v
+
