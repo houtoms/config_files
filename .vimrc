@@ -55,7 +55,7 @@ au BufNewFile,BufRead *.cl set filetype=c
 
 syntax on
 filetype on
-au BufNewFile,BufRead *.cu set filetype=cpp11
+au BufNewFile,BufRead *.cu set filetype=cuda
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
