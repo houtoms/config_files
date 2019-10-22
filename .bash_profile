@@ -64,7 +64,7 @@ git_branch() {
 if [ "$color_prompt" = yes ]; then
     PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[01;33m\]@\[\033[01;34m\]\h\[\033[00m\]   \[\033[00;31m\]\d \t\[\033[01;36m\]\n\w\[\033[01;35m\]\$(git_branch)\[\033[0;36m\] [\!]\[\033[00m\] > "
 else
-    PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w(\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)) "
+    PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$(git_branch) > "
 fi
 unset color_prompt force_color_prompt
 
